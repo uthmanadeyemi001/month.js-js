@@ -61,3 +61,21 @@ function monthCheck() {
     alert("you need to input a proper month name");
   }
 }
+
+
+let monthName = prompt("enter month name")
+if (monthName =='january'||"march"||"may"||"july"||"august"||"december") {
+  
+} else {
+  
+}
+
+
+function oddNumber() {
+   let number = prompt("type any number")
+   if (number % 2 == 0) {
+    alert ("the number is even")
+   } else {
+    alert("the number is odd")
+   }
+}
