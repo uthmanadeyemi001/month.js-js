@@ -5,7 +5,7 @@ function  subResult() {
     let math = document.getElementById("math").value
     let chem = document.getElementById("chem").value
     let phy = document.getElementById("phy").value
-  let average = (eng + math + chem + phy) / 4
+  let average = (Number(eng) + Number(math) + Number(chem) + Number(phy)) / 4
   let grade = ("A")
   let gradeB = ("B")
   let gradeC = ("C")
