@@ -16,18 +16,18 @@ function  subResult() {
     alert("all field must be filled")
  }else if (average >= 80) {
     
-        document.getElementById("display").innerHTML = `your grade is A and you average is ${average}`;
+        document.getElementById("display").innerHTML = `your grade is A and your average is ${average}`;
       }else if ( average >= 70) {
-        document.getElementById("display").innerHTML = "your grade is B";
+        document.getElementById("display").innerHTML = `your grade is B and your average is ${average}`;
         
       }else if (average >= 60) {
-        document.getElementById("display").innerHTML = "your grade is C";
+        document.getElementById("display").innerHTML = `your grade is C and your average is ${average}`;
         
       }else if (average >= 50) {
-        document.getElementById("display").innerHTML = "your grade is D";
+        document.getElementById("display").innerHTML = `your grade is D and your average is ${average}`;
         
       }else if (average < 50) {
-        document.getElementById("display").innerHTML = "your grade is F";
+        document.getElementById("display").innerHTML = `your grade is F and your average is ${average}`;
         
       }else{
         alert("invalid score")
