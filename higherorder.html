@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Higher Order functions</h1>
+    <h3 id="count">Count</h3>
+  </body>
+</html>
+
+<script>
+  // a higher order function is a function that takes in another function
+  // a callback function is a function that is passed into another function, to be executed (or called )later
+
+  function greet(name, callback) {
+    //higher order function
+    console.log(`Hello ${name}`);
+    callback();
+  }
+
+  function goodBye() {
+    //callback function
+    console.log("later now");
+  }
+
+  greet("ade", goodBye);
+
+  function multiply(a, b, displayValue) {
+    const result = a * b;
+    displayValue(result);
+  }
+
+  function displayValue(result) {
+    console.log(result * 54);
+  }
+
+  multiply(5, 4, displayValue);
+
+  // setTimeout is a higher order function that takes in a callback function and a time in milliseconds
+  setTimeout(() => {
+    console.log("hello");
+  }, 3000);
+
+  
+
+  let countvalue = 11;
+  count.innerText = countvalue;
+
+  let timeInterval = setInterval(() => {
+    if (countvalue == 1) {
+      clearInterval(timeInterval);
+      console.log("gameover");
+    } else {
+      countvalue--;
+      console.log(countvalue);
+      count.innertext = countvalue;
+    }
+
+    // console.log(countvalue);
+  }, 1000);
+</script>

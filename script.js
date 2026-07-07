@@ -19,6 +19,9 @@
 //    alert( `${month} has 30 days in it`)
 //    }
 // }
+
+
+
 function monthCheck() {
   let month = prompt("You can search about a month here:")
   if (month === "january") {
@@ -78,4 +81,8 @@ function oddNumber() {
    } else {
     alert("the number is odd")
    }
+}
+
+for (let i = 10; i <= 10; i--) {
+  console.log(i);   
 }

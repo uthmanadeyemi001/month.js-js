@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input id="personName" type="text" placeholder="name" >
+<input id="personEmail" type="text" placeholder="email">
+<input id=" personPassword" type="text" placeholder="password">
+<button onclick="getDetails()">get details</button>
+<button onclick="displaydetails()">get details</button>
+    <script src="scope.js"></script>
+</body>
+</html>
+<script>
+    let dispArr = []
+    let theName     = ''
+    let theEmail    = ''
+    let thePassword = ''
+     let personObject = null ;
+
+    function getDetails() {
+        // console.log(personName.value);
+        // console.log(personEmail.value);
+        // console.log(personPassword.value);
+
+    theName     = personName.value;
+    theEmail    = personEmail.value;
+     thePassword = personPassword.value;
+  
+
+     personObject = {
+         name:theName,
+         email :theEmail,         
+         password : thePassword
+
+        }
+    }
+
+    function displaydetails(params) {
+        console.log(theName,theEmail,thePassword);
+        
+    }
+    let studentObj = {
+        name : "awwal",
+        email :" taiwoawwal@gmail.com"
+    }
+</script>

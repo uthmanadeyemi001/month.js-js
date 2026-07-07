@@ -36,3 +36,19 @@ function  subResult() {
 
       
 }
+// for(let i = 10; i >= 0; i--)
+//   console.log(i);
+
+// for(let num = 0; num <= 10++){
+//   console.log(`${num} * ${num}`);
+  
+// }
+
+// for (let i = 1; i <= 12; i++ ){
+//   console.log(`${i}* 2 = ${times * 2} `);
+  
+// }
+for (let i = 1; i <= 12; i++ ){
+  console.log(`${i}* 3 = ${times * 3} `);
+  
+}
